@@ -1,15 +1,19 @@
 {
   "name": "cors-anywhere-server",
   "version": "1.0.0",
+  "homepage": "https://pkpkpkpkpkpkpkpk.github.io/cors-anywhere-server",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Parth Khatri <pk.2121@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "cors-anywhere": "^0.4.1"
+    "cors-anywhere": "^0.4.1",
+    "gh-pages": "^2.0.1"
   }
 }
